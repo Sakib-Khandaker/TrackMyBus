@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "locatex-api"
+version = "0.1.1"
+description = "LocateX transportation API"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.141.1",
+  "uvicorn[standard]>=0.35,<1",
+  "sqlalchemy>=2.0,<3",
+  "psycopg[binary]>=3.2,<4",
+  "alembic>=1.16,<2",
+  "pydantic-settings>=2.10,<3",
+  "email-validator>=2.2,<3",
+  "python-jose[cryptography]>=3.5,<4",
+  "pwdlib[argon2]>=0.2,<1",
+  "python-multipart>=0.0.20,<1"
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]

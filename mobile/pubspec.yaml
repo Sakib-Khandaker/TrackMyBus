@@ -1,0 +1,32 @@
+name: locatex
+
+description: LocateX real-time transportation mobile app.
+
+publish_to: "none"
+
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  dio: ^5.9.0
+  http: ^1.5.0
+  shared_preferences: ^2.5.3
+  provider: ^6.1.5+1
+  geolocator: ^14.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+

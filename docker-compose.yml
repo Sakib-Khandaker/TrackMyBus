@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgis/postgis:18-3.6
+    container_name: locatex-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: locatex
+      POSTGRES_USER: locatex
+      POSTGRES_PASSWORD: locatex_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - locatex_pgdata:/var/lib/postgresql
+
+volumes:
+  locatex_pgdata:
